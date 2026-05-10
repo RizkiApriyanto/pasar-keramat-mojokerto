@@ -1,0 +1,5 @@
+{
+  "name": "Pasar Keramat Mojokerto",
+  "description": "Website profil resmi Pasar Keramat Mojokerto - Destinasi wisata pasar tradisional yang memadukan budaya, kuliner, dan kearifan lokal di Mojokerto.",
+  "requestFramePermissions": ["geolocation"]
+}

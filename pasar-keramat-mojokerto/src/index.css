@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-black-900: #000000;
+  --color-black-80: #292929;
+  --color-black-40: #4a4a4a;
+
+  --color-earth-50: #fdfcf9;
+  --color-earth-100: #f7f3e9;
+  --color-earth-200: #ede4d1;
+  --color-earth-300: #dfcfb1;
+  --color-earth-400: #c9b085;
+  --color-earth-500: #b3915f;
+  --color-earth-600: #9c784c;
+  --color-earth-700: #826140;
+  --color-earth-800: #6b5038;
+  --color-earth-900: #584331;
+  
+  --color-forest-50: #f2f8f4;
+  --color-forest-100: #e1eee5;
+  --color-forest-200: #c5ddce;
+  --color-forest-300: #9bc2aa;
+  --color-forest-400: #6ca181;
+  --color-forest-500: #4b8462;
+  --color-forest-600: #3a6a4e;
+  --color-forest-700: #305540;
+  --color-forest-800: #294535;
+  --color-forest-900: #22392d;
+}
+
+@layer base {
+  body {
+    @apply bg-earth-50 text-earth-900 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.glass-nav {
+  @apply bg-white/80 backdrop-blur-md border-b border-earth-200;
+}
+
+.section-padding {
+  @apply py-20 px-6 md:px-12 lg:px-24;
+}
+
+.btn-primary {
+  @apply bg-forest-600 hover:bg-forest-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-lg shadow-forest-200/50 active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-earth-200 hover:bg-earth-300 text-earth-800 px-8 py-3 rounded-full font-medium transition-all duration-300 active:scale-95;
+}
+
+.card-hover {
+  @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-earth-200/50;
+}
